@@ -8,3 +8,6 @@ c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Client)\S
 c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Client)\Socal Network (Client)\obj\Debug\Socal Network (Client).pdb
 c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Client)\Socal Network (Client)\obj\Debug\SocialNetwork_Client.ChatForm.resources
 c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Client)\Socal Network (Client)\obj\Debug\SocialNetwork_Client.ClientForm.resources
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Client)\Socal Network (Client)\bin\Debug\Socal Network (Client).exe.config
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Client)\Socal Network (Client)\obj\Debug\Socal Network (Client).exe
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Client)\Socal Network (Client)\obj\Debug\Socal Network (Client).pdb
