@@ -1,0 +1,13 @@
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).exe.config
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).exe
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).pdb
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).csprojResolveAssemblyReference.cache
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal_Network__Server_.Properties.Resources.resources
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).csproj.GenerateResource.Cache
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).exe
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).pdb
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\obj\Debug\SocialNetwork_Server.ServerForm.resources
+c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\Socal Network (Server)\bin\Debug\MySql.Data.dll
+C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).exe.config
+C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).exe
+C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).pdb
