@@ -1,0 +1,9 @@
+
+
+	- finding a way to generate id for users and groups
+	- adding 'remove user from group' option to app
+	- preventing client to add an existing user to a group again
+	- adding 'remove group' option
+	- sending group information like users along with old conversations
+	- adding 'change password' option
+	- 

@@ -24,10 +24,9 @@ namespace SocialNetwork_Server
         /********************* Methods **********************/
         public void Connect_Mysql()
         {
-            string commond_script = @"server=localhost;userid=SocialNetworkServer;password=ONLINE6731online6731;";
             try
             {
-                connection = new MySqlConnection(commond_script);
+                connection = new MySqlConnection(@"server=localhost;userid=SocialNetworkServer;password=ONLINE6731online6731;");
                 connection.Open();
                 Status("Server connected to database. \n");
                 Status("MySQL version : " + connection.ServerVersion + "\n");
@@ -43,14 +42,14 @@ namespace SocialNetwork_Server
             if (log.InvokeRequired) log.Invoke(new MethodInvoker(() => { log.Text += text + Environment.NewLine; }));
             else log.Text += text + Environment.NewLine;
             Console.WriteLine(" >>" + text);
-        }
+        } // prints app's logs in log Textbox and console
         public void StartServer()
         {
             serverSocket = new TcpListener(Convert.ToInt16(port.Text));
             clientSocket = new TcpClient();
             serverSocket.Start();
             Status("Server Started. \n");
-            while (true)
+            while (counter++ < 10)
             {
                 clientSocket = serverSocket.AcceptTcpClient();
                 Status("Client No:" + Convert.ToString(counter) + " started! \n");
@@ -58,7 +57,6 @@ namespace SocialNetwork_Server
             }
         } // starting server and waiting  for clients to connect
         /****************************************************/
-
 
         /******************* Buttons action *****************/
         private void closeButton_Click(object sender, EventArgs e)
@@ -155,7 +153,7 @@ namespace SocialNetwork_Server
 
             try
             {
-                cmd.CommandText = "INSERT INTO groups." + group + "(Pm_number, pm_Sender, pm_Text) VALUES('" + pmNumber + "','" + pmSender + "','" + pmText + "');";
+                cmd.CommandText = "INSERT INTO groups." + group + "(pm_number, pm_sender, pm_text) VALUES('" + pmNumber + "','" + pmSender + "','" + pmText + "');";
                 cmd.ExecuteNonQuery();
                 ServerForm.Status("new messege added to database");
                 updateClients(input, pmNumber);
@@ -286,13 +284,13 @@ namespace SocialNetwork_Server
             cmd.CommandText = "CREATE TABLE groups. " + group_name + 
                             "(" +
                                 "pm_number INT," + 
-                                "group_sender VARCHAR(45)," +
-                                "group_datetime DATE," +
-                                "group_text TEXT," +
+                                "pm_sender VARCHAR(45)," +
+                                "pm_datetime DATE," +
+                                "pm_text TEXT," +
                                 "PRIMARY KEY (pm_number)" +
                             ")" ;
             cmd.ExecuteNonQuery();
-            cmd.CommandText = "INSERT INTO groups." + group_name + " (pm_number,group_sender,group_text) VALUES('1' , 'Server' , 'group starts!')";
+            cmd.CommandText = "INSERT INTO groups." + group_name + " (pm_number,pm_sender,pm_text) VALUES('1' , 'Server' , 'group starts!')";
             cmd.ExecuteNonQuery();
             cmd.CommandText = "INSERT INTO informations.groups_information (group_id,group_name,group_type,group_describtion,group_members) VALUES('" + group_name + "' , '" + group_name + "' , '" + group_type + "' , '" + group_describtion + "' , '" + User_ID + '|' + "')";
             cmd.ExecuteNonQuery();
