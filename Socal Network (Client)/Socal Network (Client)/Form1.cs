@@ -20,8 +20,7 @@ namespace SocialNetwork_Client
         {
             // log.Text += text;
             Console.WriteLine(" >>" + text);
-        }
-
+        }  // prints app's logs in log Textbox and console
         private void connectButton_Click(object sender, EventArgs e)
         {
             clientSocket = new TcpClient();
@@ -75,14 +74,13 @@ namespace SocialNetwork_Client
                 "#2" + group_type.Text + "2#" +
                 "#3" + group_describtion.Text + "3#");
             Status("new group information sent");
-        }
-
+        } // sending information to make a new group
         private void AddtogroupButton_Click(object sender, EventArgs e)
         {
             writer.Write("@addtogroup:" +
                 "#1" + user_id.Text + "1#" +
                 "#2" + group_id.Text + "2#");
             Status("user information sent to be added to the group");
-        }
+        } // seding infornation to add a user to a group
     }
 }

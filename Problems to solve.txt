@@ -6,4 +6,5 @@
 	- adding 'remove group' option
 	- sending group information like users along with old conversations
 	- adding 'change password' option
+	- add 'user verifing check' methos and checking permition before changing DB
 	- 

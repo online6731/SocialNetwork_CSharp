@@ -10,7 +10,7 @@ namespace SocialNetwork_Server
 {
     public partial class ServerForm : Form
     {
-        public static int counter;
+        public static int counter = 0;
         public static Dictionary<string, client> allusers = new Dictionary<string, client>();
         public static MySqlConnection connection = null;
         public static TcpListener serverSocket = null;
@@ -22,6 +22,12 @@ namespace SocialNetwork_Server
         }
 
         /********************* Methods **********************/
+        public static void Status(string text)
+        {
+            if (log.InvokeRequired) log.Invoke(new MethodInvoker(() => { log.Text += text + Environment.NewLine; }));
+            else log.Text += text + Environment.NewLine;
+            Console.WriteLine(" >>" + text);
+        } // prints app's logs in log Textbox and console
         public void Connect_Mysql()
         {
             try
@@ -37,12 +43,6 @@ namespace SocialNetwork_Server
                 Status("Error: " + ex.ToString() + "\n");
             }
         } // connecting to database
-        public static void Status(string text)
-        {
-            if (log.InvokeRequired) log.Invoke(new MethodInvoker(() => { log.Text += text + Environment.NewLine; }));
-            else log.Text += text + Environment.NewLine;
-            Console.WriteLine(" >>" + text);
-        } // prints app's logs in log Textbox and console
         public void StartServer()
         {
             serverSocket = new TcpListener(Convert.ToInt16(port.Text));
@@ -57,6 +57,8 @@ namespace SocialNetwork_Server
             }
         } // starting server and waiting  for clients to connect
         /****************************************************/
+
+
 
         /******************* Buttons action *****************/
         private void closeButton_Click(object sender, EventArgs e)
