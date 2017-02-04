@@ -11,3 +11,6 @@ c:\users\mohammad\documents\visual studio 2015\Projects\Socal Network (Server)\S
 C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).exe.config
 C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).exe
 C:\Users\Mohammad\Documents\GitHub\Socal Network (Server)\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).pdb
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Server)\Socal Network (Server)\bin\Debug\Socal Network (Server).exe.config
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).exe
+C:\Users\Mohammad\Documents\GitHub\SocialNetwork\Socal Network (Server)\Socal Network (Server)\obj\Debug\Socal Network (Server).pdb
